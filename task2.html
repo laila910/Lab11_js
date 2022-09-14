@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2 - form</title>
+    <style>
+        input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=email], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+button {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button {
+  background-color: #45a049;
+}
+
+form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+      body{
+        margin:auto;
+        padding:100px;
+        text-align: center;
+      }
+   
+input:invalid { border-color: red; }
+#username:invalid + label::after { content: 'The required UserName may only be aserious of alphabetic characters'; }
+#email:invalid +label::after{content:"The required email address may not include any special characters other than the '@' sign";}
+#username:valid +label::after{content:' ✓ ';}
+#email:valid +label::after{content:" ✓ ";}
+
+   </style>
+</head>
+
+<body>
+    <h1> Change Email Address</h1>
+   <form method="get" onsubmit="return 0;">
+    <input id="username" type="text" name="username" placeholder="username" required>
+    <label for="username"></label><br>
+    <input id="email" type="email" name="email" placeholder="email" required>
+    <label for="email"> </label><br>
+    <button>Change</button>
+<form></form>
+</body>
+</html>
