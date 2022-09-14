@@ -9,9 +9,22 @@
 body{
     margin:50px;
 }
+
+#image:hover { animation: fadeIn 15s; }
+@keyframes fadeIn {
+  0% { opacity: 1; }
+  25%{opacity: 0.5;}
+  50% { opacity: 0; }
+  75% { opacity: 0.5; }
+  100%{opacity:1;}
+
+}
+
     </style>
 </head>
 <body>
-    <img src="">
+    <div id="image">
+        <img src="ImgTsks/imageForTask1.jpg" width="300px">
+     </div>
 </body>
 </html>
