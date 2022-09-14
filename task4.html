@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid </title>
+    <style>
+        body{
+            margin:600px;
+            background-color: aqua;
+            color:white;
+        }
+        section {
+          display: grid;
+          width: 600px;
+          height:600px;
+          transform: rotate(60deg);
+        
+
+          grid-template-areas:
+            "c1 c2 c2"
+            "c1 c3 c4"
+            "c5 c5 c4";
+        }
+      
+        #child1 {
+          grid-area: c1;
+          background-color: rgb(132, 78, 7);
+        }
+        #child2{
+          grid-area: c2;
+          background-color: rgb(132, 78, 7);
+        }
+        #child3 {
+          grid-area: c3;
+          background-color: rgb(132, 78, 7);
+        }
+        #child4 {
+          grid-area: c4;
+          background-color:rgb(132, 78, 7);
+        }
+        #child5{
+            grid-area:c5;
+            background-color: rgb(132, 78, 7);;
+        }
+        div{
+            margin:2px;
+        }
+      </style>
+    </head>
+    <body>
+      <!-- way 1 -->
+      <section>
+        <div id="child1">1</div>
+        <div id="child2">2</div>
+        <div id="child3">3</div>
+        <div id="child4">4</div>
+        <div id="child5">5</div>
+      </section>
+    </body>
+</html>
